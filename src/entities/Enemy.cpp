@@ -30,7 +30,6 @@ void Enemy::tick(float dt)
     if (Vector2Length(velocity) < enemyRadius)
         velocity = {};
 
-    texture = LoadTexture("assets/goblin_run.png");
     BaseCharacter::tick(dt);
 
     if (CheckCollisionRecs(target->getCollisionRec(), getCollisionRec()))
